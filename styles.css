@@ -144,48 +144,67 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.7rem;
-  margin: 0;
+  gap: 1rem;
+  margin: 0.25rem 0 0;
 }
 
 .social a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
+  width: 2.75rem;
+  height: 2.75rem;
   color: var(--ink);
   text-decoration: none;
   line-height: 0;
-}
-
-.social a:hover {
-  opacity: 0.7;
-}
-
-.social svg {
-  width: 22px;
-  height: 22px;
-  display: block;
+  overflow: hidden;
   flex: none;
 }
 
+.social a:hover {
+  opacity: 0.72;
+}
+
+.social svg {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: block;
+  flex: none;
+  overflow: hidden;
+}
+
+.contact-block p {
+  margin: 0 0 0.85rem;
+  max-width: 42rem;
+}
+
 .contact-form {
-  display: grid;
-  gap: 0.85rem;
-  max-width: 28rem;
-  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.95rem;
+  width: min(100%, 28rem);
+  margin-top: 1.5rem;
+}
+
+.contact-form .field {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.35rem;
+  width: 100%;
+  margin: 0;
 }
 
 .contact-form label {
-  display: grid;
-  gap: 0.3rem;
+  display: block;
   font-size: 0.92rem;
   color: var(--muted);
 }
 
 .contact-form input,
 .contact-form textarea {
+  display: block;
   width: 100%;
   padding: 0.55rem 0.7rem;
   border: 1px solid var(--line);
@@ -201,7 +220,7 @@ a:hover {
 }
 
 .contact-form button {
-  justify-self: start;
+  align-self: flex-start;
   padding: 0.5rem 1.15rem;
   border: 0;
   border-radius: 4px;
@@ -216,10 +235,7 @@ a:hover {
 }
 
 .contact-form .honey {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
+  display: none;
 }
 
 .portrait {
