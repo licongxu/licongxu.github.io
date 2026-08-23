@@ -126,7 +126,7 @@ a:hover {
 }
 
 .hero h1 {
-  margin: 0;
+  margin: 0 0 1.15rem;
   font-family: Newsreader, Georgia, serif;
   font-size: clamp(2.8rem, 6vw, 4.4rem);
   font-weight: 500;
@@ -134,32 +134,101 @@ a:hover {
   line-height: 1.05;
 }
 
-.chinese-name {
-  margin: 0.35rem 0 1.2rem;
-  color: var(--muted);
-  font-size: 1.15rem;
-}
-
 .lede {
-  margin: 0 0 0.7rem;
+  margin: 0 0 1.35rem;
   max-width: 38rem;
   font-size: 1.18rem;
 }
 
-.affiliation {
-  margin: 0 0 1.4rem;
-  color: var(--muted);
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
-.hero-links {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.icon-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 1.1rem;
+  align-items: center;
+  gap: 0.55rem;
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0.95rem;
 }
+
+.icon-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.icon-links a:hover {
+  opacity: 0.8;
+  color: var(--accent);
+}
+
+.icon-links svg {
+  width: 2.15rem;
+  height: 2.15rem;
+  display: block;
+}
+
+.icon-links .email {
+  width: auto;
+  height: 2.15rem;
+  gap: 0.45rem;
+  padding: 0 0.9rem 0 0.7rem;
+  color: var(--accent);
+  font-size: 0.95rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.icon-links .email:hover {
+  opacity: 1;
+  border-color: var(--accent);
+}
+
+.icon-links .email svg {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.icon-links .wide {
+  width: auto;
+  height: 2.15rem;
+}
+
+.icon-links .wide svg {
+  height: 2.15rem;
+  width: auto;
+}
+
+.icon-links .wide-arxiv svg { width: 4.3rem; }
+.icon-links .wide-inspire svg { width: 5rem; }
+.icon-links .wide-ioa svg { width: 3.55rem; }
+.icon-links .wide-kicc svg { width: 3.9rem; }
 
 .portrait {
   margin: 0;
@@ -307,15 +376,13 @@ h3 {
   font-size: 0.92rem;
 }
 
-.code-list,
-.contact-links {
+.code-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.code-list li,
-.contact-links li {
+.code-list li {
   margin: 0 0 0.75rem;
 }
 
