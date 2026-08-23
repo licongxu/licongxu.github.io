@@ -380,19 +380,6 @@ h3 {
   line-height: 1.4;
 }
 
-.pubs .role {
-  display: inline-block;
-  margin-left: 0.4rem;
-  padding: 0.05rem 0.4rem;
-  border: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-
 .pubs .venue {
   color: var(--muted);
   font-size: 0.96rem;
