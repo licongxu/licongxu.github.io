@@ -22,91 +22,79 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC:wght@400&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="wordmark" href="#top">Licong Xu</a>
-      <nav aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#code">Code</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">PhD student in Astronomy</p>
-          <h1>Licong Xu</h1>
-          <p class="lede">
-            I work on cosmology and fundamental physics at the
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__overlay" aria-hidden="true"></div>
+      <div class="sidebar__inner">
+        <figure class="avatar">
+          <img src="assets/portrait-web.jpg" alt="Licong Xu" width="200" height="200">
+        </figure>
+        <h1 class="sidebar__name"><a href="#bio">Licong Xu</a></h1>
+        <p class="sidebar__tagline">
+          PhD student in Astronomy | Cosmology | Simulation-based inference | AI for scientific discovery
+        </p>
+
+        <nav class="social" aria-label="Profiles">
+          <a href="https://github.com/licongxu" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M12 .3C5.37.3 0 5.67 0 12.3c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.28-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.26 1.98-.4 3-.4s2.04.14 3 .4c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.22.69.83.57C20.57 22.1 24 17.6 24 12.3 24 5.67 18.63.3 12 .3z"/></svg>
+          </a>
+          <a href="https://uk.linkedin.com/in/licong-xu-56b108171" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.28v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
+          </a>
+          <a href="mailto:lx256@cam.ac.uk" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+        </nav>
+
+        <nav class="sidebar-nav" aria-label="Primary">
+          <a href="#bio">Bio</a>
+          <a href="#articles">Articles</a>
+          <a href="#code">Code</a>
+          <a href="#cv">CV</a>
+        </nav>
+        <nav class="sidebar-nav-secondary" aria-label="Secondary">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="content" id="main">
+      <div class="content__inner">
+      <section id="bio" class="page-section">
+        <h2>Bio</h2>
+        <div class="prose">
+          <p>
+            Hi! I’m Licong Xu, a PhD student at the University of Cambridge, based at the
             <a href="https://www.ast.cam.ac.uk/people/licong.xu">Institute of Astronomy</a>
             and the
             <a href="https://www.kicc.cam.ac.uk/staff/licong-xu">Kavli Institute for Cosmology</a>,
-            University of Cambridge.
-          </p>
-          <nav class="social" aria-label="Profiles">
-            <a href="mailto:andyxlcnb@gmail.com" aria-label="Email" title="Email">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#1B1712"/><path fill="#F4EFE6" d="M4.2 7.1 12 12.4 19.8 7.1H4.2ZM4 8.35V16.5c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V8.35L12 13.7 4 8.35Z"/></svg>
-            </a>
-            <a href="https://orcid.org/0009-0005-7088-4379" aria-label="ORCID" title="ORCID">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><path fill="#A6CE39" d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.844-1.35 3.844-3.722 0-2.025-1.372-3.722-3.9-3.722h-2.241z"/></svg>
-            </a>
-            <a href="https://inspirehep.net/authors/2946432" aria-label="INSPIRE" title="INSPIRE">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#0B5CAB"/><path fill="#fff" d="M8 16.4V7.6h1.5v8.8H8zm3.1 0V7.6h2.7c1.9 0 3.2 1.2 3.2 2.9 0 1.7-1.3 2.9-3.2 2.9h-1.2v3H11.1zm1.5-4.4h1.1c.9 0 1.6-.5 1.6-1.5s-.7-1.5-1.6-1.5h-1.1v3z"/></svg>
-            </a>
-            <a href="https://github.com/licongxu" aria-label="GitHub" title="GitHub">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><path fill="currentColor" d="M12 .3C5.37.3 0 5.67 0 12.3c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.28-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.26 1.98-.4 3-.4s2.04.14 3 .4c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.22.69.83.57C20.57 22.1 24 17.6 24 12.3 24 5.67 18.63.3 12 .3z"/></svg>
-            </a>
-            <a href="https://arxiv.org/search/?searchtype=author&amp;query=Xu%2C+Licong" aria-label="arXiv" title="arXiv">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#B31B1B"/><text x="12" y="16" text-anchor="middle" fill="#fff" font-size="7" font-family="Times New Roman, serif" font-style="italic">arXiv</text></svg>
-            </a>
-            <a href="https://uk.linkedin.com/in/licong-xu-56b108171" aria-label="LinkedIn" title="LinkedIn">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><path fill="#0A66C2" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.28v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
-            </a>
-          </nav>
-        </div>
-        <figure class="portrait">
-          <img src="assets/portrait-web.jpg" alt="Licong Xu" width="560" height="720">
-        </figure>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="wrap split">
-        <h2>About</h2>
-        <div class="prose">
-          <p>
-            I am a PhD student in Astronomy at the University of Cambridge, based at the Institute of Astronomy and the Kavli Institute for Cosmology, supervised by Prof. Anthony Challinor, Dr. Boris Bolliet, and Dr. Íñigo Zubeldia.
+            working at the intersection of cosmology, scientific computing, and artificial intelligence. I completed my BA and MSci in Natural Sciences at Cambridge, specialising in astrophysics.
           </p>
           <p>
-            My work sits at the intersection of cosmology, modern data analysis, and AI, with a focus on CMB secondaries, cluster cosmology, simulation-based inference, and AI agents.
+            My research focuses on extracting cosmological and astrophysical information from secondary anisotropies of the cosmic microwave background, particularly the thermal Sunyaev–Zel’dovich (tSZ) effect and galaxy clusters. I develop and study different statistical summaries of these signals, including cluster number counts and the tSZ power spectrum, and investigate how they can be used to probe both cosmology and the astrophysics of baryonic feedback. A major theme of my work is developing end-to-end analysis pipelines and inference methods applied to cosmological simulations, connecting theoretical models and simulations to observable signals and their physical interpretation through approaches including Bayesian likelihood-based inference and simulation-based inference (SBI).
           </p>
-          <h3>Education</h3>
-          <ul class="timeline">
-            <li><span>2024 – 2027</span> PhD in Astronomy, University of Cambridge (expected)</li>
-            <li><span>2023 – 2024</span> Master of Natural Sciences (Astrophysics), University of Cambridge</li>
-            <li><span>2020 – 2023</span> B.A. in Natural Sciences (Astrophysics), University of Cambridge</li>
-          </ul>
+          <p>
+            I am also broadly interested in machine learning and AI for scientific discovery. I make extensive use of modern AI systems, including open-source models, coding agents, and agentic workflows, across my research and software development. Beyond using AI as a tool, I have also worked on agentic AI for scientific discovery, developing systems in which LLM agents can plan, use tools, execute code, and collaborate on scientific research tasks.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="news" class="alt">
-      <div class="wrap split">
+      <section id="news" class="page-section">
         <h2>News</h2>
         <ul class="news">
+          <li>
+            <span>Sep 2026</span>
+            <p><a href="https://arxiv.org/abs/2510.26887"><em>The Denario project</em></a> was accepted at <em>Physical Review X</em>.</p>
+          </li>
           <li>
             <span>Jul 2026</span>
             <p>Our simulation-based inference analysis of the tSZ power spectrum is published in <a href="https://doi.org/10.1103/PhysRevD.114.043528"><em>Physical Review D</em></a> (<a href="https://arxiv.org/abs/2606.14622">arXiv:2606.14622</a>).</p>
@@ -128,42 +116,10 @@
             <p>Two papers at the <a href="https://ml4astro.github.io/icml2025/">ML4Astro</a> workshop at ICML 2025, including a Spotlight on RAG agents (<a href="https://arxiv.org/abs/2507.07257">arXiv:2507.07257</a>, <a href="https://arxiv.org/abs/2507.07155">arXiv:2507.07155</a>).</p>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section id="research">
-      <div class="wrap split">
-        <h2>Research</h2>
-        <div>
-          <div class="research-group">
-            <h3>Cosmology and astrophysics</h3>
-            <div class="theme-grid one">
-              <article>
-                <h4>CMB secondaries</h4>
-                <p>Thermal Sunyaev–Zel’dovich power spectra, cluster astrophysics, and the use of Compton-<em>y</em> maps as a cosmological probe.</p>
-              </article>
-            </div>
-          </div>
-          <div class="research-group">
-            <h3>AI</h3>
-            <div class="theme-grid two">
-              <article>
-                <h4>Simulation-based inference</h4>
-                <p>Neural posterior and likelihood estimation for non-Gaussian observables, and checks of when a Gaussian power-spectrum likelihood remains adequate.</p>
-              </article>
-              <article>
-                <h4>Agentic AI for scientific discovery</h4>
-                <p>Planning-and-control multi-agent systems (cmbagent, Denario) and evolutionary coding agents (CMBEvolve, CosmoEvolve) for autonomous and semi-autonomous research in cosmology.</p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications">
-      <div class="wrap split">
-        <h2>Publications</h2>
+      <section id="articles" class="page-section">
+        <h2>Articles</h2>
         <ol class="pubs">
           <li>
             <p class="authors"><strong>L. Xu</strong>, Í. Zubeldia, J. Alvey, B. Bolliet, and A. Challinor</p>
@@ -196,7 +152,7 @@
           <li>
             <p class="authors">F. Villaescusa-Navarro, B. Bolliet, P. Villanueva-Domingo, et al. (incl. <strong>L. Xu</strong>)</p>
             <p class="title">The Denario project: Deep knowledge AI agents for scientific discovery</p>
-            <p class="venue">arXiv preprint (2025)</p>
+            <p class="venue">Accepted at <em>Phys. Rev. X</em></p>
             <p class="links">
               <a href="https://arxiv.org/abs/2510.26887">arXiv:2510.26887</a>
               <a href="https://arxiv.org/pdf/2510.26887">pdf</a>
@@ -223,25 +179,9 @@
             </p>
           </li>
         </ol>
-      </div>
-    </section>
+      </section>
 
-    <section id="teaching" class="alt">
-      <div class="wrap split">
-        <h2>Teaching</h2>
-        <div class="prose">
-          <p>Undergraduate supervisor, University of Cambridge, 2024–present.</p>
-          <ul>
-            <li>General Relativity, 2025–present</li>
-            <li>Principles of Quantum Mechanics, 2024–2025</li>
-            <li>Introduction to Cosmology, 2024–2025</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="code">
-      <div class="wrap split">
+      <section id="code" class="page-section">
         <h2>Code</h2>
         <ul class="code-list">
           <li>
@@ -265,38 +205,15 @@
             — JAX simulation-based inference with prior-knob conditioning.
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact" class="alt">
-      <div class="wrap split">
+      <section id="contact" class="page-section">
         <h2>Contact</h2>
         <div class="contact-block">
           <p>Office O14, Institute of Astronomy, Madingley Road, Cambridge CB3 0HA, UK</p>
-          <nav class="social" aria-label="Profiles">
-            <a href="mailto:andyxlcnb@gmail.com" aria-label="Email" title="Email">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#1B1712"/><path fill="#F4EFE6" d="M4.2 7.1 12 12.4 19.8 7.1H4.2ZM4 8.35V16.5c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V8.35L12 13.7 4 8.35Z"/></svg>
-            </a>
-            <a href="https://www.ast.cam.ac.uk/people/licong.xu" aria-label="Institute of Astronomy" title="Institute of Astronomy">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#1D3557"/><text x="12" y="16" text-anchor="middle" fill="#F4EFE6" font-size="8" font-family="Helvetica, Arial, sans-serif" font-weight="700">IoA</text></svg>
-            </a>
-            <a href="https://www.kicc.cam.ac.uk/staff/licong-xu" aria-label="Kavli Institute for Cosmology" title="Kavli Institute for Cosmology">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#3D5A80"/><text x="12" y="16" text-anchor="middle" fill="#F4EFE6" font-size="7" font-family="Helvetica, Arial, sans-serif" font-weight="700">KICC</text></svg>
-            </a>
-            <a href="https://orcid.org/0009-0005-7088-4379" aria-label="ORCID" title="ORCID">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><path fill="#A6CE39" d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.359 0 3.844-1.35 3.844-3.722 0-2.025-1.372-3.722-3.9-3.722h-2.241z"/></svg>
-            </a>
-            <a href="https://inspirehep.net/authors/2946432" aria-label="INSPIRE" title="INSPIRE">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#0B5CAB"/><path fill="#fff" d="M8 16.4V7.6h1.5v8.8H8zm3.1 0V7.6h2.7c1.9 0 3.2 1.2 3.2 2.9 0 1.7-1.3 2.9-3.2 2.9h-1.2v3H11.1zm1.5-4.4h1.1c.9 0 1.6-.5 1.6-1.5s-.7-1.5-1.6-1.5h-1.1v3z"/></svg>
-            </a>
-            <a href="https://github.com/licongxu" aria-label="GitHub" title="GitHub">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><path fill="currentColor" d="M12 .3C5.37.3 0 5.67 0 12.3c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.28-.01-1.04-.02-2.04-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.26 1.98-.4 3-.4s2.04.14 3 .4c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.22.69.83.57C20.57 22.1 24 17.6 24 12.3 24 5.67 18.63.3 12 .3z"/></svg>
-            </a>
-            <a href="https://uk.linkedin.com/in/licong-xu-56b108171" aria-label="LinkedIn" title="LinkedIn">
-              <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true"><path fill="#0A66C2" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.28v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.23 0z"/></svg>
-            </a>
-          </nav>
-          <form class="contact-form" action="https://formsubmit.co/andyxlcnb@gmail.com" method="POST">
+          <p><a href="mailto:lx256@cam.ac.uk">lx256@cam.ac.uk</a></p>
+
+          <form class="contact-form" action="https://formsubmit.co/lx256@cam.ac.uk" method="POST">
             <input type="hidden" name="_subject" value="Message from licongxu.github.io">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://licongxu.github.io/#contact">
@@ -316,14 +233,60 @@
             <button type="submit">Send</button>
           </form>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>Licong Xu · Institute of Astronomy, University of Cambridge</p>
-    </div>
-  </footer>
+      <section id="cv" class="page-section">
+        <h2>CV</h2>
+        <div class="prose">
+          <p class="note">CV coming soon.</p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>Licong Xu · Institute of Astronomy, University of Cambridge</p>
+      </footer>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector(".menu-toggle");
+      var sidebar = document.getElementById("sidebar");
+      var links = document.querySelectorAll(".sidebar-nav a, .sidebar-nav-secondary a");
+
+      if (toggle && sidebar) {
+        toggle.addEventListener("click", function () {
+          var open = sidebar.classList.toggle("sidebar--open");
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+      }
+
+      links.forEach(function (link) {
+        link.addEventListener("click", function () {
+          sidebar.classList.remove("sidebar--open");
+          toggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      var sections = document.querySelectorAll(".page-section");
+      var navLinks = document.querySelectorAll(".sidebar-nav a[href^='#'], .sidebar-nav-secondary a[href^='#']");
+
+      function setActiveNav() {
+        var current = "";
+        sections.forEach(function (section) {
+          if (window.scrollY >= section.offsetTop - 120) {
+            current = section.getAttribute("id");
+          }
+        });
+        navLinks.forEach(function (link) {
+          link.classList.toggle("is-active", link.getAttribute("href") === "#" + current);
+        });
+      }
+
+      window.addEventListener("scroll", setActiveNav, { passive: true });
+      setActiveNav();
+    })();
+  </script>
 </body>
 </html>
