@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC:wght@400&family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=17">
+  <link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -39,7 +39,7 @@
         </figure>
         <h1 class="sidebar__name"><a href="#bio">Licong Xu</a></h1>
         <p class="sidebar__tagline">
-          PhD student in Astronomy | Cosmology | Simulation-based inference | AI for scientific discovery
+          PhD student in Astronomy | Cosmology | AI for scientific discovery
         </p>
 
         <nav class="social" aria-label="Profiles">
@@ -183,26 +183,33 @@
 
       <section id="code" class="page-section">
         <h2>Code</h2>
-        <ul class="code-list">
+        <ul class="code-timeline">
           <li>
-            <a href="https://github.com/CMBAgents/cmbagent"><strong>CMBAgent</strong></a>
-            — Open-source multi-agent system for autonomous scientific research.
+            <div class="code-timeline__image">
+              <img src="assets/code-cmbagent.png?v=3" alt="CMBAgent logo">
+            </div>
+            <div class="code-timeline__panel">
+              <h3><a href="https://github.com/CMBAgents/cmbagent">CMBAgent</a></h3>
+              <p>
+                Open-source Planning &amp; Control multi-agent system for autonomous scientific research.
+                More details in the paper
+                <a href="https://arxiv.org/abs/2507.07257">arXiv:2507.07257</a>.
+              </p>
+            </div>
           </li>
           <li>
-            <a href="https://github.com/AstroPilot-AI/Denario"><strong>Denario</strong></a>
-            — Modular multi-agent system for scientific research assistance.
-          </li>
-          <li>
-            <a href="https://github.com/licongxu/JXPaint"><strong>JXPaint</strong></a>
-            — GPU tSZ Compton-<em>y</em> map painting in Python and JAX.
-          </li>
-          <li>
-            <a href="https://github.com/licongxu/tszsbi"><strong>tszsbi</strong></a>
-            — JAX implementation of the tSZ power spectrum for simulation-based inference.
-          </li>
-          <li>
-            <a href="https://github.com/licongxu/AutoSBI"><strong>AutoSBI</strong></a>
-            — JAX simulation-based inference with prior-knob conditioning.
+            <div class="code-timeline__image">
+              <img src="assets/code-hmfast.png?v=2" alt="hmfast halo-model emblem">
+            </div>
+            <div class="code-timeline__panel">
+              <h3><a href="https://github.com/licongxu/hmfast">hmfast</a></h3>
+              <p>
+                Differentiable JAX-native halo-model code for cosmological observables, including the tSZ power spectrum.
+                The <a href="https://github.com/licongxu/tszsbi">tszsbi</a> codebase for the simulation-based inference analysis in
+                <a href="https://arxiv.org/abs/2606.14622">Xu et al., <em>Phys. Rev. D</em> <strong>114</strong>, 043528 (2026)</a>
+                is now merged here.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -238,7 +245,7 @@
       <section id="cv" class="page-section">
         <h2>CV</h2>
         <div class="prose">
-          <p class="note">CV coming soon.</p>
+          <p><a href="assets/Licong_Xu_CV.pdf">Download CV (PDF)</a></p>
         </div>
       </section>
 
